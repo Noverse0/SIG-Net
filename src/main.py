@@ -1,5 +1,5 @@
 import argparse
-from graph_builder import kddcup_graph
+from graph_builder import kddcup_graph, naver_graph
 from utils import get_logger
 from trainer import train
 
@@ -8,7 +8,10 @@ def main(args):
     logger.info('train args')
     logger.info(args)
 
-    dataset = kddcup_graph()
+    if args.dataset == 'kddcup':
+        dataset = kddcup_graph()
+    else:
+        dataset = naver_graph()
     train(args, dataset, logger)
 
 if __name__ == "__main__":
@@ -24,7 +27,7 @@ if __name__ == "__main__":
     parser.add_argument("--dropout", type=float, default=0.3, help="dropout %")
     parser.add_argument("--log_dir", type=str, default='experiment_log/', help="log_dir")
     parser.add_argument("--num_workers", type=int, default=4, help="num_workers")
-    parser.add_argument("--bi", type=bool, default=False, help="BiLSTM")
+    parser.add_argument("--bi", type=bool, default=True, help="BiLSTM")
     
     args = parser.parse_args()
     
