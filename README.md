@@ -33,5 +33,11 @@ As the COVID-19 pandemic has increased interest in remote learning, so has inter
 # Reference
 This code is free and open source for only academic/research purposes (non-commercial). If you use this code as part of any published research, please acknowledge the following paper.
 ```
-soon
+\copyrightyear{2024}
+\acmYear{2024}
+\setcopyright{rightsretained}
+\acmConference[SAC '24]{The 39th ACM/SIGAPP Symposium on Applied Computing}{April 8--12, 2024}{Avila, Spain}
+\acmBooktitle{The 39th ACM/SIGAPP Symposium on Applied Computing (SAC '24), April 8--12, 2024, Avila, Spain}\acmDOI{10.1145/3605098.3636002}
+\acmISBN{979-8-4007-0243-3/24/04}
+NOTE: For authors using the ACM Microsoft Word Master Article Template and Publication Workflow, The ACM Publishing System (TAPS) will add the rights statement to your papers for you. Please check with your conference contact for information regarding submitting your source file(s) for processing.
 ```
